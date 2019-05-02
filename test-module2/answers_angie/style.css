@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+header {
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+.htres {
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: palevioletred;
+}
+main {
+    margin-top: 45vh;
+}
+ol>li:nth-child(3) {
+    color: rgb(0, 119, 255);
+}
+.background {
+    background-image: url("images/tree.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+}
+.images {
+    display: flex;
+    display: block;
+}
+img[alt~="Image2"] {
+    padding: 5px;
+    border: 3px solid rgb(19, 121, 255);
+}
+.col span:nth-child(even) {
+    background-color: purple;
+}
+.relative {
+    position: relative;
+    left: 10em;
+}
+.absolute {
+    position: absolute;
+    top: 5em;
+    right: 0;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.item:nth-of-type(10) { flex-grow: 2; }
+
+.wrapper {
+    border: 2px solid gray;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 5em 5em 5em;
+}
+.celltwo {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.cellthree {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.cellseven {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.wrapper div {
+    border: 2px solid blueviolet;
+}
+
+@media only screen and (max-width: 480px) {
+    .mediaquery {
+        background-color: rgb(141, 204, 255);
+        width: 5rem;
+        height: 5rem;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .mediaquery {
+        background-color: rgb(247, 255, 141);
+        width: 7rem;
+        height: 7rem;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .mediaquery {
+        background-color: rgb(255, 85, 85);
+        width: 10rem;
+        height: 10rem;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .mediaquery {
+        background-color: rgb(178, 85, 255);
+        width: 12rem;
+        height: 12rem;
+    }
+}
